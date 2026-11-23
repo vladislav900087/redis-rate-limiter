@@ -32,10 +32,6 @@ pip install -r requirements.txt -> installs dependencies locally.
 ```
 
 ```bash
-pip install -r requirements.txt -> installs dependencies locally.
-```
-
-```bash
 docker compose up -d --build -> builds and starts containers.
 
 ```
