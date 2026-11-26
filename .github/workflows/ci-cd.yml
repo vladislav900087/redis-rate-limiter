@@ -22,7 +22,6 @@ jobs:
           cp .env.example .env
           docker compose build api
           docker compose up -d --wait redis
-          docker compose run --rm -v .:/code api pytest -v
           docker compose run --rm api pytest -v
       - name: Show redis database logs on failure
         if: ${{ failure() }}
